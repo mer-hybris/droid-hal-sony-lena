@@ -20,6 +20,8 @@
 %define makefstab_skip_entries / /product /system /system_ext /vendor
 Requires: droid-system
 
+BuildRequires: python
+
 %define pre_actions /bin/sh setup-sources.sh
 
 %define droid_src_build 1
